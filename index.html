@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- BOOTSTRAP--> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<title>La Princesa y El Sapo</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="estilos.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+    // Función para cargar una página en el contenedor
+    function loadPage(page) {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("content").innerHTML = this.responseText;
+        }
+      };
+      xhttp.open("GET", page, true);
+      xhttp.send();
+    }
+  </script>
+</head>
+<body>
+<header>
+
+
+
+
+<!-- NAV BAR -->
+
+<div class="fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Image and text -->
+    <div class="d-flex align-items-center">
+      <a href="index1.html" class="navbar-brand">
+        <img src="IMAGENES/logo3.png" class="logomarca" width="150" height="90" alt="">
+      </a>
+    </div>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="Historia.html">Historia</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="recetas.html">Recetas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="imagenes.html">Fotos</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+</header>
+
+<!-- FIN DEL NAV BAR -->
+
+<!-- alertas para que se vea la imagen --> 
+<div class="alert alert-light" role="alert">
+  A simple light alert—check it out!
+</div>
+<!-- alertas para que se vea la imagen --> 
+<div class="alert alert-light" role="alert">
+ 
+</div>
+
+<!-- Reproductor de audio -->
+  <audio id="audio" src="IMAGENES/pantano.mp3" autoplay loop controls></audio>
+
+
+
+<!-- IMAGENES EN CAROUSSEL --> 
+
+<div class="card bg-dark text-white d-flex justify-content-center align-items-center">
+  <img src="IMAGENES/imagen1.jpeg" class="card-img" alt="..." style="width: 64rem" height="50%">
+  <div class="circle-out">
+    <div class="circle-in"></div>
+  </div>
+
+  <div class="card-img-overlay">
+    <img src="IMAGENES/luciernaga.png" class="custom-cursor" style="width: 50px">
+    <div class="card border-success mb-3" style="max-width: 130rem;">
+      <div class="card-body text-success text-center">
+        <h5 class="card-title">Bienvenid@ a la fan page de La Princesa y El Sapo. Podes encontrar recetas, un breve argumento de la película y además podrás ver escenas de la película.</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER--> 
+
+<footer>
+  <button class="btn btn-success btn-lg btn-block d-inline-block" data-content="Disabled popover" style="pointer-events: none;" type="button" disabled>
+      <p class="card-text"><i class="fa fa-instagram" aria-hidden="true"></i> 
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-envelope" aria-hidden="true"></i></p>
+  </button>
+</footer>
+
+	<!-- BOOTSTRAP--> 
+<style>
+    /* Estilo personalizado para el cursor */
+    .custom-cursor {
+      cursor: none; /* Oculta el cursor predeterminado del navegador */
+      position: fixed;
+      pointer-events: none; /* Permite hacer clic y interactuar con los elementos debajo del cursor */
+      z-index: 9999; /* Asegura que el cursor aparezca en la parte superior */
+    }
+  </style>
+  <!-- Script para mantener la reproducción continua de la música al cambiar de página -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var audio = document.getElementById("audio");
+      var currentPage = window.location.href;
+      audio.currentTime = sessionStorage.getItem("audioTime_" + currentPage) || 0;
+      
+      window.addEventListener("beforeunload", function() {
+        sessionStorage.setItem("audioTime_" + currentPage, audio.currentTime);
+      });
+    });
+  </script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  <script type="text/javascript">$(document).ready(function(){
+  $(document).mousemove(function(e){
+    $('img').css('left',e.pageX+"px");
+    $('img').css('top',e.pageY+"px");
+  });
+});
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
