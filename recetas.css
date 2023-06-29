@@ -1,0 +1,31 @@
+.main_section {  
+	padding: 2rem;
+}
+.main_section .details { 
+	display: flex; 
+	padding: 2rem;
+	gap: 2rem; 
+}
+.main_section .details .details_img { 
+	flex: 1;
+}
+.main_section .details .details_description { 
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+.main_section .details .details_description div { 
+	display: flex;
+	gap: 2rem;
+	padding: 1rem;
+}
+.main_section .details .details_description div button { 
+	flex: 1;
+	padding: 0.5rem 1rem;
+}
+
+img { max-width: 50%}
+h1 { text-align: center;}
+
+

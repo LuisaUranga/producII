@@ -1,0 +1,108 @@
+
+header { text-align: center; 
+    justify-content: center; 
+    color: white; 
+    font-size: 20px;
+    display:flex; 
+    flex-flow: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    background-image: url("IMAGENES/banner.png"); 
+    background-size: 100%; background-position: center
+}
+
+h1 { color: black; 
+    text-align: center; 
+    padding: 2px; 
+    justify-content: center; 
+    margin: 1%;
+    font-size: 37px;
+}
+
+nav { text-align: center;
+    background-color: green;
+}
+
+footer { align-items: center; 
+    background-color: black; 
+    color: white; 
+}
+
+.navbar-nav .nav-item .nav-link {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+html {
+  cursor: none;
+  background: #F1FFFA;
+
+}
+
+img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+body {
+  background: #1c1c1c;
+  cursor: value, auto;
+  cursor: progress, auto;
+  cursor: none;
+}
+
+.video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+}
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background: url('IMAGENES/luciernaga.png') no-repeat center;
+  background-size: cover;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.circle-out {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  background: rgba(159, 255, 245, 1);
+  position: relative;
+  padding: 5px;
+  animation: grow .8s infinite;
+}
+.circle-in {
+  border-radius: 50%;
+  background: #D81159;
+  height: 40px;
+  width: 40px;
+  margin: 0 auto;
+}
+
+  .carousel-inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    .carousel-item {
+      text-align: center;
+    }
+
+.custom-img {
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+
+body { font-family: 'Roboto', sans-serif;
+min-height: 100vh;
+}
+
+a { color:white;}
+img { min-width: 20%;
+    max-width: 100%;
+}
+header { text-align: center; 
+    font-size: 20px;
+   
+    display:flex; 
+    flex-flow: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    background-image: url("IMAGENES/banner.png"); 
+    background-size: 100%; background-position: center
+}
+        
+.nombresitio { width:30%
+}
+.logomarca { width:175px; 
+}
+
+nav { width: 80%; 
+    text-align: right; 
+    padding: 10px; 
+    box-sizing: border-box;
+} 
+nav a {  padding: 10px; 
+    color: white; 
+    text-decoration: none 
+}
+nav a:hover { padding: 10px 5px; 
+    transition: all 3s; 
+    background-color: green; 
+    border-radius: 5px ; 
+    margin: 5px;
+}
+/* Regla para poner el relleno (padding) y Margen en cero */
+* { margin: 0; padding: 0; }
+
+
+footer {text-align: center; 
+    background-color: black; 
+    color: white; 
+    padding: 10px
+}
+
+.icono { display: none;
+    position: absolute;
+    right: 10px;
+}
+
+
+.masinfo a { 
+    display: inline-block; 
+    padding: 10px;
+    border-radius: 6px;
+    text-decoration: none; 
+    background-color: green;  
+}
+
+.masinfo { display: block !important; }
+
+.masinfo:hover p { 
+    height: 275px;
+    transition: all 1s; 
+}
+
+.masinfo p { 
+    height: 0 ; 
+    overflow: hidden; 
+}
+
